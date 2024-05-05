@@ -14,21 +14,21 @@ st.set_page_config(
     page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
-df = pd.DataFrame({'col1': [1,2,3]})
-x = 10
-'x: ', x 
-st.radio("好きなマイケルは？", ('ジャクソン', 'ジョーダン', 'ホフマン'))
-uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
-if uploaded_file is not None:
-    df = pd.read_csv(
-        uploaded_file,
-        sep=r'\s(?=(?:[^"]*"[^"]*")*[^"]*$)(?![^\[]*\])',
-        engine='python',
-        na_values='-',
-        header=None)
+# df = pd.DataFrame({'col1': [1,2,3]})
+# x = 10
+# 'x: ', x 
+# st.radio("好きなマイケルは？", ('ジャクソン', 'ジョーダン', 'ホフマン'))
+# uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
+# if uploaded_file is not None:
+#     df = pd.read_csv(
+#         uploaded_file,
+#         sep=r'\s(?=(?:[^"]*"[^"]*")*[^"]*$)(?![^\[]*\])',
+#         engine='python',
+#         na_values='-',
+#         header=None)
 
-st.markdown('### アクセスログ（先頭5件）')
-st.write(df.head(5))
+# st.markdown('### アクセスログ（先頭5件）')
+# st.write(df.head(5))
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
