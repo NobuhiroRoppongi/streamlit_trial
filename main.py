@@ -15,8 +15,8 @@ st.set_page_config(
     layout="centered",  # Page layout option
 )
 # df = pd.DataFrame({'col1': [1,2,3]})
-# x = 10
-# 'x: ', x 
+x = 10
+'x: ', x 
 # st.radio("好きなマイケルは？", ('ジャクソン', 'ジョーダン', 'ホフマン'))
 # uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
 # if uploaded_file is not None:
