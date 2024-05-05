@@ -3,7 +3,7 @@ import streamlit as st
 # import google.generativeai as genai
 
 import sys
-st.write(sys.executable)
+# st.write(sys.executable)
 
 # Setting up page link 
 st.set_page_config(page_title="Nobs Sample", page_icon='page_logo.png')
