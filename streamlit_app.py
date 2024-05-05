@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import google.generativeai as genai
 
+source /home/adminuser/venv/bin/activate
+
 # Setting up page link 
 st.set_page_config(page_title="Nobs Sample", page_icon='page_logo.png')
 st.title("Nobs Sample analysis tool")
