@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 # Setting up page link 
-st.set_page_config(page_title="メインページ", page_icon='page_logo.png')
+st.set_page_config(page_title="Nobs Sample", page_icon='page_logo.png')
 st.title("Multiple OSS Access Log Analyzer")
 
 df = pd.DataFrame({'col1': [1,2,3]})
