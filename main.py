@@ -28,7 +28,7 @@ if uploaded_file is not None:
         header=None)
 
 st.markdown('### アクセスログ（先頭5件）')
-# st.write(df.head(5))
+st.write(df.head(5))
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
