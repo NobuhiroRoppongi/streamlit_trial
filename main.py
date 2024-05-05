@@ -18,7 +18,7 @@ st.set_page_config(
 x = 10
 'x: ', x 
 st.radio("好きなマイケルは？", ('ジャクソン', 'ジョーダン', 'ホフマン'))
-# uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
+uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
 # if uploaded_file is not None:
 #     df = pd.read_csv(
 #         uploaded_file,
