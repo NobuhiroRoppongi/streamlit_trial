@@ -51,8 +51,8 @@ if "chat_session" not in st.session_state:
 
 
 # Display the chatbot's title on the page
-st.title("🤖 Try a ChatBot Site made by Nobby🤖 ")
-st.markdown('Try using the following prompt to test out Gemini!')
+st.title("🤖 ChatBot Site made by Nobby🤖 ")
+st.markdown('Try using the following prompt to test out Gemini on this website. Feel free to ask any Qs.')
 # Display the chat history
 for message in st.session_state.chat_session.history:
     with st.chat_message(translate_role_for_streamlit(message.role)):
