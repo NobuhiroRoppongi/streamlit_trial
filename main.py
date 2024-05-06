@@ -15,19 +15,19 @@ st.set_page_config(
     layout="centered",  # Page layout option
 )
 # df = pd.DataFrame({'col1': [1,2,3]})
-x = 10
-'x: ', x 
-st.radio("好きなマイケルは？", ('ジャクソン', 'ジョーダン', 'ホフマン'))
-uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
-if uploaded_file is not None:
-    df = pd.read_csv(
-        uploaded_file,
-        sep=r'\s(?=(?:[^"]*"[^"]*")*[^"]*$)(?![^\[]*\])',
-        engine='python',
-        na_values='-',
-        header=None)
+# x = 10
+# 'x: ', x 
+# st.radio("好きなマイケルは？", ('ジャクソン', 'ジョーダン', 'ホフマン'))
+# uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
+# if uploaded_file is not None:
+#     df = pd.read_csv(
+#         uploaded_file,
+#         sep=r'\s(?=(?:[^"]*"[^"]*")*[^"]*$)(?![^\[]*\])',
+#         engine='python',
+#         na_values='-',
+#         header=None)
 
-st.markdown('### アクセスログ（先頭5件）')
+# st.markdown('### アクセスログ（先頭5件）')
 # st.write(df.head(5))
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -51,8 +51,8 @@ if "chat_session" not in st.session_state:
 
 
 # Display the chatbot's title on the page
-st.title("🤖 Gemini Pro - ChatBot by Nobs🤖 ")
-
+st.title("🤖 Try a ChatBot Site made by Nobby🤖 ")
+st.markdown('# Try using the following prompt to test out Gemini!')
 # Display the chat history
 for message in st.session_state.chat_session.history:
     with st.chat_message(translate_role_for_streamlit(message.role)):
